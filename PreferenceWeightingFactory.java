@@ -29,8 +29,6 @@ public class PreferenceWeightingFactory extends DefaultWeightingFactory {
             return new PreferenceWeighting(lookup, PreferenceProfile.META);
         } else if ("foot_path".equals(profileName)) {
             return new PreferenceWeighting(lookup, PreferenceProfile.PATH);
-        } else if ("foot_recursive".equals(profileName)) {
-            return new PreferenceWeighting(lookup, PreferenceProfile.RECURSIVE);
         }
 
         return super.createWeighting(profile, hints, disableTurnCosts);
